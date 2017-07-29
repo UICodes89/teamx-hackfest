@@ -1,9 +1,9 @@
 #!/user/bin/env python3
 #_*_ coding: utf-8 _*_
 """"
-Created on Saturday
+Created on Saturday  29/07/2017
 
-@author: TeamX
+@author: TeamX 
 """
 
 import re, os
@@ -28,3 +28,4 @@ class BagOfWords(object):
         	if key not in sum:
         		sum[key] = other.__bag_of_words[key]
 		return erg
+
