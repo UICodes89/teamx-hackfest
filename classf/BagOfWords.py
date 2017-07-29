@@ -29,3 +29,18 @@ class BagOfWords(object):
         		sum[key] = other.__bag_of_words[key]
 		return erg
 
+	def add_word(self,word):
+        """ A word is added in the dictionary __bag_of_words"""
+        self.__number_of_words += 1
+        if word in self.__bag_of_words:
+            self.__bag_of_words[word] += 1
+        else:
+            self.__bag_of_words[word] = 1
+    
+    def len(self):
+        """ Returning the number of different words of an object """
+        return len(self.__bag_of_words)
+    
+    def Words(self):
+        """ Returning a list of the words contained in the object """
+        return self.__bag_of_words.keys()
