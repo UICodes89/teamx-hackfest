@@ -44,3 +44,14 @@ class BagOfWords(object):
     def Words(self):
         """ Returning a list of the words contained in the object """
         return self.__bag_of_words.keys()
+
+    def BagOfWords(self):
+        """ Returning the dictionary, containing the words (keys) with their frequency (values)"""
+        return self.__bag_of_words
+        
+    def WordFreq(self,word):
+        """ Returning the frequency of a word """
+        if word in self.__bag_of_words:
+            return self.__bag_of_words[word]
+        else:
+            return 0
